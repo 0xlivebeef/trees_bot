@@ -44,7 +44,8 @@ class Bot():
         ch.setFormatter(LOG_FORMAT)
         logger.addHandler(fh)
         logger.addHandler(ch)
-        logger.info("Bot initialized for /r/" + config.SUBREDDIT)
+        logger.info("Bot initialized for /r/" + config.SUBREDDIT + " as /u/"
+                    + config.USERNAME)
 
     def run(self):
         while True:
@@ -58,38 +59,49 @@ class Bot():
         logger.info('log hit run')
         print('hit run()')
         
-    # This function activates and de-activates the /r/trees weekend stylesheet. It finds a
-    # specified block of code, and either inserts or removes CSS comment markers based on the day
-    # of the week.
     def dayChange(self, newDay):
+        """
+        This function activates and de-activates the /r/trees
+        weekend stylesheet. It finds a specified block of code, and
+        either inserts or removes CSS comment markers based on the day
+        of the week.
+        """
         css = self.subr.stylesheet.__call__().stylesheet
-        curTime = datetime.datetime.now().strftime("%b %d %Y %H:%M:%S EST (UTC-5)")
+        curTime = datetime.datetime.now().strftime(
+                "%b %d %Y %H:%M:%S EST (UTC-5)")
         
-        if newDay == 1:
+        if newDay == 1:  # MONDAY
             SubredditModeration(self.subr).update(link_type = 'any')
             css = re.sub(r'\*  BEGIN AUTOMATIC UPDATE AREA\n \*/\n\n',
                          '*  BEGIN AUTOMATIC UPDATE AREA\n */\n/*\n', css)
             css = re.sub(r'\n/\*\n \*  END AUTOMATIC UPDATE AREA',
                          '*/\n/*\n *  END AUTOMATIC UPDATE AREA', css)
         
-        if newDay == 6:
+        if newDay == 6:  # SATURDAY
             css = re.sub(r'\*  BEGIN AUTOMATIC UPDATE AREA\n \*\/\n\/\*\n',
                          '*  BEGIN AUTOMATIC UPDATE AREA\n */\n\n', css)
             css = re.sub(r'%%sunday%%', '%%saturday%%', css)
             css = re.sub(r'\*\/\n\/\*\n \*  END AUTOMATIC UPDATE AREA',
                          '\n/*\n *  END AUTOMATIC UPDATE AREA', css)
             
-        if newDay == 7:
+        if newDay == 7:  # SUNDAY
             css = re.sub(r'%%saturday%%', '%%sunday%%', css)
             SubredditModeration(self.subr).update(link_type = 'self')
         
         if newDay in (1, 6, 7):
-            newCSS = re.sub(r'  last change:.*.\n',
-                            '  last change: ' + curTime + '\n', css)
-            self.subr.stylesheet.update(newCSS, 'scheduled stylesheet update for '
-                                   + calendar.day_name[newDay])
+            newCSS = re.sub(r'  last change:.*.\n', '  last change: ' + curTime
+                            + '\n', css)
+            self.subr.stylesheet.update(newCSS,
+                                        'scheduled stylesheet update for '
+                                        + calendar.day_name[newDay])
             logger.info("Stylesheet successfully updated.")
     
+        self.curDay = newDay
+        self.logfile_name_format = datetime.datetime.now().strftime(
+                "log_%Y-%m-%d")
+        self.fh = logging.FileHandler('../logfiles/' + self.logfile_name_format
+                                      + '.txt')
+        
     def update(self):
         logger.info('log hit update')
 
