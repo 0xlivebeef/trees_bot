@@ -93,7 +93,7 @@ class Bot():
                             + '\n', css)
             self.subr.stylesheet.update(newCSS,
                                         'scheduled stylesheet update for '
-                                        + calendar.day_name[newDay])
+                                        + calendar.day_name[newDay-1])
             logger.info("Stylesheet successfully updated.")
     
         self.curDay = newDay
