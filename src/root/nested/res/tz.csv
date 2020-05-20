@@ -1,0 +1,27 @@
+14,Line Islands,LINT,,the [Line Islands](https://en.wikipedia.org/wiki/Line_Islands) of Kiribati
+13,Phoenix Island,PHOT,,"Samoa, Tonga, the Phoenix Islands of Kiribati, and Tokelau, New Zealand"
+12,Fiji,FJT,,"Fiji, Marshall Islands, Nauru, Tuvalu, far eastern Russia, and most of New Zealand"
+11,Magadan,MAGT,,"eastern Russia, eastern Micronesia, and several small islands and territories"
+10,Australian Eastern Standard,AEST,,"eastern Australia, western Micronesia, and eastern Russia (ents in central Australia, your 4:20 is in half an hour)"
+9,Japan/Korea Standard,JST/KST,,"Japan, Korea, east Indonesia, and east-central Russia"
+8,China Standard,CST,,"China, Hong Kong, western Australia, and central Russia"
+7,Indochina,ICT,,"Vietnam, Thailand, Laos, and parts of Russia, Indonesia, and Mongolia (ents in Myanmar, your 4:20 is in half an hour)"
+6,Bangladesh Standard,BST,,"Bangladesh, Bhutan, Kyrgyzstan, central Russia, and most of Kazakhstan (Nepalese ents, your 4:20 is in 15 minutes; Indients, your 4:20 is in half an hour)"
+5,Pakistan Standard,PKT,,"Pakistan, Maldives, Tajikistan, Turnmenistan, Uzbekistan, west-central Russia, and parts of Kazakhstan (Afghanistents and Iranients, your 4:20 is in half an hour)"
+4,Gulf Standard,GST,,"Armenia, Azerbaijan, Mauritius, Oman, Seychelles, UAE, most of Georgia, and lower-east Russia"
+3,Eastern European Summer Time/Arabia Standard Time/East Africa,EEST/EAT/AST,,"Bahrain, Belarus, Bulgaria, Comoros, Cyprus, Djibouti, Eritrea, Estonia, Ethiopia, Finland, Greece, Iraq, Israel, Jordan, Kenya, Kuwait, Latvia, Lebanon, Lithuania, Madagascar, Moldova, Palestine, Qatar, Romania, Saudi Arabia, Somalia, South Sudan, Syria, Tanzania, Turkey, Uganda, Yemen, Moscow, most of Ukraine, and parts of Georgia"
+2,Central European Summer Time/Central Africa,CEST/CAT,,"Albania, Andorra, Austria, Belgium, Bosnia and Herzegovnia, Botswana, Burundi, Croatia, Czech Republic, Denmark, Egypt, France, Germany, Hungary, Italy, Kosovo, Lesotho, Libya, Liechtenstein, Luxembourg, Malawi, Malta, Monaco, Montenegro, Mozambique, Namibia, Netherlands, North Macedonia, Norway, Poland, Rwanda, Serbia, Slovakia, Slovenia, Spain, Sudan, Swaziland, Sweden, Switzerland, Vatican City, Zambia, Zimbabwe, most of Ukraine, and some UK territories"
+1,Western European Summer Time/West Africa,BST/WAT,,"Algeria, Angola, Benin, Cameroon, Central African Republic, Chad, Congo, Equatorial Guinea, Gabon, Ireland, Morocco, Niger, Nigeria, Portugal Tunisia, Western Sahara, United Kingdom, and parts of DR Congo"
+0,Coordinated Universal,UTC,,"Burkina Faso, Côte d'Ivoire, Gambia, Ghana, Guinea, Guinea-Bissau, Iceland, Liberia, Mali, Mauritania, Sahrawi Arab Democratic Republic,  São Tomé and Príncipe, Senegal, Sierra Leone, and Togo"
+-1,Cape Verde,CVT,,Cape Verde (and nowhere else!)
+-2,Fernando de Noronha,FNT,,"most of Greenland, as well as Fernando de Noronha, Saint Pierre and Miquelon, South Georgia and the South Sandwich Islands"
+-3,Atlantic Daylight Time/Brasilia,ADT/BRT,,"Argentina, Suriname, Uruguay, eastern Canada, and eastern Brazil"
+-4,Eastern Daylight Time,EDT,,"eastern United States, eastern Canada, Antigua and Barbuda, Bahamas, Barbados, Bolivia, Cuba, Dominican Republic, Grenada, Guyana, Haiti, Paraguay, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines Trinidad and Tobago, Venezuela, west-central Brazil, most of Chile, and many territories"
+-5,Central Daylight Time,CDT,,"east-central United States and Canada, eastern Mexico, Colombia, Ecuador, Jamaica, Panama, Peru, and western Brazil"
+-6,Mountain Daylight Time,MDT,,"west-central United States, Canada, and Mexico; Belize; Costa Rica; El Salvador; Guatemala; Honduraz; Nicaragu; and the Galápagos Province of Ecuador"
+-7,Pacific Daylight Time,PDT,,"western United States, Canada, and Mexico"
+-8,Alaska Daylight Time,AKDT,,most of Alaska
+-9,Hawaii-Aleutian Daylight Time,HDT,,the Alaskan Aleutian Islands and the French Polynesian Gambier Islands
+-10,Hawaii Standard Time,HST,,"Hawaii, French Polynesia, and Cook Islands"
+-11,Samoa Standard Time,SST,,"American Samoa and Niue, New Zealand"
+-12,,,,
